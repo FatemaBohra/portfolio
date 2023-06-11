@@ -1,3 +1,3 @@
 # portfolio
 
-## Please click [Portfolio](https://timely-piroshki-2e459d.netlify.app/) to know more
+## Please click [Portfolio](https://radiant-taiyaki-51693b.netlify.app/) to know more about me
