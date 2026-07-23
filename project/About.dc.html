@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;background:#0a0a0a;}
+  a{color:#fff;text-decoration:none;}
+  a:hover{color:rgba(255,255,255,0.7);}
+  .liquid-glass{
+    background: rgba(255, 255, 255, 0.01);
+    background-blend-mode: luminosity;
+    backdrop-filter: blur(4px);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    position: relative; overflow: hidden;
+  }
+  .liquid-glass::before{
+    content:'';position:absolute;inset:0;border-radius:inherit;padding:1.4px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.15) 20%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.15) 80%, rgba(255,255,255,0.45) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude; pointer-events:none;
+  }
+  .noise-overlay::after{
+    content:'';position:absolute;inset:0;pointer-events:none;opacity:0.55;mix-blend-mode:soft-light;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    background-size:240px 240px;
+  }
+  .about-grid{display:grid;grid-template-columns:1fr;gap:20px;}
+  @media(min-width:1024px){.about-grid{grid-template-columns:1fr 1fr;}}
+  .portfolio-card-link{cursor:pointer;transition:transform 300ms ease;}
+  .portfolio-card-link:hover{transform:scale(1.015);}
+</style>
+</helmet>
+<div data-screen-label="About" style="min-height:100vh;background:#0a0a0a;color:#fff;font-family:'Inter',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:clamp(24px,2.5vw,40px) clamp(16px,3vw,56px);">
+  <a href="Features.dc.html" class="liquid-glass" style="display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:10px 18px;font-size:13px;color:#fff;">←</a>
+
+  <h1 style="margin:32px 0 8px;font-size:clamp(28px,3.4vw,40px);font-weight:400;letter-spacing:-0.02em;">About Me</h1>
+  <p style="margin:0 0 12px;font-size:15px;color:rgba(255,255,255,0.6);max-width:860px;line-height:1.6;">Aspiring AI-Augmented Software Developer and Computer Science student at Dalhousie University, building real-world experience one project at a time — through a co-op term, hands-on projects, and active involvement in campus life.</p>
+  <p style="margin:0 0 32px;font-size:15px;color:rgba(255,255,255,0.6);max-width:860px;line-height:1.6;">Four years in, I have built production applications used by real people, contributed to industry teams, led client projects, and stayed deeply involved in my campus community — all at once. Finishing my degree in August 2026 and ready for what comes next.</p>
+
+  <div style="max-width:768px;margin:0 auto;">
+    <h2 style="margin:0 0 10px;font-size:clamp(22px,2.4vw,30px);font-weight:400;letter-spacing:-0.02em;">Community Leadership</h2>
+    <p style="margin:0 0 32px;font-size:15px;color:rgba(255,255,255,0.6);line-height:1.6;">Four-plus years of putting people first, on and off campus.</p>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:16px;max-width:768px;margin:0 auto;">
+
+    <span style="text-transform:uppercase;letter-spacing:0.22em;font-size:11px;font-weight:700;color:rgba(255,255,255,0.7);">On Campus</span>
+
+    <div style="border-radius:16px;background:#141414;padding:22px 24px;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <h3 style="margin:0;font-size:18px;font-weight:500;">VP, Women in Tech Society</h3>
+        <span style="font-size:13px;color:rgba(255,255,255,0.5);white-space:nowrap;">Sep 2023 – Apr 2026</span>
+      </div>
+      <p style="margin:6px 0 0;font-size:13.5px;color:rgba(255,255,255,0.6);">Dalhousie University</p>
+      <p style="margin:10px 0 0;font-size:13.5px;color:rgba(255,255,255,0.75);line-height:1.6;">Led initiatives promoting diversity and inclusion for women in STEM.</p>
+    </div>
+
+    <div style="border-radius:16px;background:#141414;padding:22px 24px;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <h3 style="margin:0;font-size:18px;font-weight:500;">Community Mentor</h3>
+        <span style="font-size:13px;color:rgba(255,255,255,0.5);white-space:nowrap;">Sep 2023 – Dec 2025</span>
+      </div>
+      <p style="margin:6px 0 0;font-size:13.5px;color:rgba(255,255,255,0.6);">Dalhousie University</p>
+      <p style="margin:10px 0 0;font-size:13.5px;color:rgba(255,255,255,0.75);line-height:1.6;">Guided first-year students through academic and personal transitions.</p>
+    </div>
+
+    <div style="border-radius:16px;background:#141414;padding:22px 24px;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <h3 style="margin:0;font-size:18px;font-weight:500;">Community Safety Team Member</h3>
+        <span style="font-size:13px;color:rgba(255,255,255,0.5);white-space:nowrap;">Aug 2024 – Sept 2025</span>
+      </div>
+      <p style="margin:6px 0 0;font-size:13.5px;color:rgba(255,255,255,0.6);">Dalhousie University</p>
+      <p style="margin:10px 0 0;font-size:13.5px;color:rgba(255,255,255,0.75);line-height:1.6;">Supports campus safety through evening patrols and student check-ins.</p>
+    </div>
+
+    <div style="border-radius:16px;background:#141414;padding:22px 24px;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <h3 style="margin:0;font-size:18px;font-weight:500;">Guest Services Associate</h3>
+        <span style="font-size:13px;color:rgba(255,255,255,0.5);white-space:nowrap;">May – Sept 2024</span>
+      </div>
+      <p style="margin:6px 0 0;font-size:13.5px;color:rgba(255,255,255,0.6);">Dalhousie University</p>
+      <p style="margin:10px 0 0;font-size:13.5px;color:rgba(255,255,255,0.75);line-height:1.6;">Front-line support for campus visitors, events, and daily operations.</p>
+    </div>
+
+    <span style="margin-top:8px;text-transform:uppercase;letter-spacing:0.22em;font-size:11px;font-weight:700;color:rgba(255,255,255,0.7);">Off Campus</span>
+
+    <div style="border-radius:16px;background:#141414;padding:22px 24px;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <h3 style="margin:0;font-size:18px;font-weight:500;">Global Youth Leader</h3>
+        <span style="font-size:13px;color:rgba(255,255,255,0.5);white-space:nowrap;">Apr 2021 – Feb 2022</span>
+      </div>
+      <p style="margin:6px 0 0;font-size:13.5px;color:rgba(255,255,255,0.6);">Plastic Tides</p>
+      <p style="margin:10px 0 0;font-size:13.5px;color:rgba(255,255,255,0.75);line-height:1.6;">Spearheaded campaigns raising awareness of plastic pollution and ocean preservation.</p>
+    </div>
+
+    <div style="border-radius:16px;background:#141414;padding:22px 24px;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;">
+        <h3 style="margin:0;font-size:18px;font-weight:500;">Social Media Coordinator</h3>
+        <span style="font-size:13px;color:rgba(255,255,255,0.5);white-space:nowrap;">June – Oct 2020</span>
+      </div>
+      <p style="margin:6px 0 0;font-size:13.5px;color:rgba(255,255,255,0.6);">SankalpTaru Foundation</p>
+      <p style="margin:10px 0 0;font-size:13.5px;color:rgba(255,255,255,0.75);line-height:1.6;">Promoted tree-plantation initiatives to combat climate change through articles and videos.</p>
+    </div>
+
+    <div style="border-radius:16px;background:#324444;padding:22px 24px;">
+      <h3 style="margin:0 0 12px;font-size:16px;font-weight:500;">Honours &amp; Awards</h3>
+      <div style="display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:rgba(255,255,255,0.85);">
+        <span>Dean's List &amp; Sexton Scholar — 2026</span>
+        <span>Women in Tech Society Scholarship — 2022–2024</span>
+        <span>Global Youth Leadership Award — 2021</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="max-width:768px;margin:32px auto 0;text-align:center;">
+    <a href="Contact.dc.html" class="liquid-glass" style="display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:10px 20px;font-size:12px;text-transform:uppercase;letter-spacing:0.14em;color:rgba(255,255,255,0.6);">Let's connect <span>→</span></a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const sparklePath = "M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .962 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.582a.5.5 0 0 1 0 .962L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.962 0z";
+    const svgIcon = (paths, size, color) => React.createElement('svg', {
+      width: size, height: size, viewBox: '0 0 24 24', fill: 'none',
+      stroke: 'currentColor', strokeWidth: 1.5, strokeLinecap: 'round', strokeLinejoin: 'round',
+      style: { color, flexShrink: 0, display: 'block' }
+    }, paths.map((d, i) => React.createElement('path', { key: i, d })));
+    return {
+      spk: svgIcon([sparklePath], 16, 'rgba(255,255,255,0.6)'),
+      arrow: svgIcon(["M7 7h10v10", "M7 17 17 7"], 16, '#fff'),
+    };
+  }
+}
+</script>
+</body>
+</html>
