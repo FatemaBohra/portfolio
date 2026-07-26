@@ -304,20 +304,20 @@ export default function Home() {
 
             <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', gap: 10, marginTop: 14 }}>
               <div>
-                <div style={{ fontSize: 14, fontWeight: 500 }}>Software Developer Intern</div>
+                <div style={{ fontSize: 14, fontWeight: 500 }}>Bachelor of Applied Computer Science</div>
+                <div style={{ fontSize: 12, fontStyle: 'italic', color: 'rgba(255,255,255,0.6)' }}>Dalhousie University</div>
+              </div>
+              <div>
+                <div style={{ fontSize: 14, fontWeight: 500 }}>Software Developer Co-op</div>
                 <div style={{ fontSize: 12, fontStyle: 'italic', color: 'rgba(255,255,255,0.6)' }}>Jazz Aviation LP</div>
               </div>
               <div>
-                <div style={{ fontSize: 14, fontWeight: 500 }}>B. of Computer Science</div>
-                <div style={{ fontSize: 12, fontStyle: 'italic', color: 'rgba(255,255,255,0.6)' }}>Dalhousie University</div>
+                <div style={{ fontSize: 14, fontWeight: 500 }}>Junior Developer Intern</div>
+                <div style={{ fontSize: 12, fontStyle: 'italic', color: 'rgba(255,255,255,0.6)' }}>Solucore Inc.</div>
               </div>
               <div>
                 <div style={{ fontSize: 14, fontWeight: 500 }}>Community Mentor</div>
-                <div style={{ fontSize: 12, fontStyle: 'italic', color: 'rgba(255,255,255,0.6)' }}>Dalhousie University</div>
-              </div>
-              <div>
-                <div style={{ fontSize: 14, fontWeight: 500 }}>Guest Services Associate</div>
-                <div style={{ fontSize: 12, fontStyle: 'italic', color: 'rgba(255,255,255,0.6)' }}>Event &amp; Conference Services</div>
+                <div style={{ fontSize: 12, fontStyle: 'italic', color: 'rgba(255,255,255,0.6)' }}>Residence Life at Dal</div>
               </div>
               <div style={{ fontSize: 12, fontStyle: 'italic', color: 'rgba(255,255,255,0.6)' }}>Dean's List &amp; Sexton Scholar</div>
             </div>

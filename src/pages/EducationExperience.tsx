@@ -46,14 +46,6 @@ function OrgLine({ children }: { children: ReactNode }) {
   return <p style={{ margin: '6px 0 0', fontSize: 13, fontStyle: 'italic', color: 'rgba(255,255,255,0.4)' }}>{children}</p>
 }
 
-function Body({ children }: { children: ReactNode }) {
-  return (
-    <p style={{ margin: '10px 0 0', fontSize: 13.5, color: 'rgba(255,255,255,0.75)', lineHeight: 1.6, whiteSpace: 'pre-line' }}>
-      {children}
-    </p>
-  )
-}
-
 function BulletList({ items }: { items: string[] }) {
   return (
     <ul style={{ margin: '10px 0 0', paddingLeft: 18, fontSize: 13.5, color: 'rgba(255,255,255,0.75)', lineHeight: 1.6 }}>
@@ -61,6 +53,23 @@ function BulletList({ items }: { items: string[] }) {
         <li key={item}>{item}</li>
       ))}
     </ul>
+  )
+}
+
+function SectionLabel({ children }: { children: ReactNode }) {
+  return (
+    <h2
+      style={{
+        margin: '4px 0 -4px',
+        fontSize: 12,
+        fontWeight: 600,
+        textTransform: 'uppercase',
+        letterSpacing: '0.16em',
+        color: 'rgba(255,255,255,0.45)',
+      }}
+    >
+      {children}
+    </h2>
   )
 }
 
@@ -83,43 +92,54 @@ export default function EducationExperience() {
       </p>
 
       <div style={{ paddingLeft: 20, borderLeft: '1px solid rgba(255,255,255,0.1)', display: 'flex', flexDirection: 'column', gap: 20 }}>
+        <SectionLabel>Education</SectionLabel>
+        <TimelineCard>
+          <EntryHeader title="Bachelor of Applied Computer Science" dates="Aug 2026" />
+          <OrgLine>Dalhousie University</OrgLine>
+          <OrgLine>GPA: 4.01</OrgLine>
+        </TimelineCard>
+
+        <SectionLabel>Experience</SectionLabel>
         <TimelineCard>
           <EntryHeader title="Software Developer Co-op" dates="Jan – May 2025" />
           <OrgLine>Jazz Aviation LP</OrgLine>
-          <Body>
-            {`Hybrid co-op role at Jazz Aviation, one of Canada's largest regional airlines.\nDeveloped an internal scheduling web application for airport staff as part of a cross-functional team of 11, collaborating across roles from team manager to department manager level.`}
-          </Body>
+          <OrgLine>Hybrid co-op role at Jazz Aviation, one of Canada's largest regional airlines.</OrgLine>
           <BulletList
             items={[
-              'Built a full-stack scheduling platform using AngularJS and React.js on the frontend and .NET Framework on the backend',
-              'Replaced a manual scheduling process, streamlining shift management and resource allocation for 40+ airport staff',
-              'Worked closely with stakeholders at multiple levels to ensure the application met operational requirements',
+              'Built an internal scheduling web application for airport staff on a cross-functional team, using AngularJS, React, C# and .NET Framework.',
+              'Collaborated with stakeholders to translate operational scheduling requirements into functional, production-ready features.',
+              'Worked as part of a cross-functional team of 11.',
             ]}
           />
         </TimelineCard>
 
         <TimelineCard>
-          <EntryHeader title="Bachelor of Computer Science" dates="Sept 2022 – Aug 2026" />
-          <OrgLine>Dalhousie University</OrgLine>
-          <OrgLine>GPA 4.01</OrgLine>
-          <Body>
-            Coursework spanning Data Structures and Algorithms, User Interface Design, and Software Development.
-            Gained hands-on industry experience through a co-op placement at Jazz Aviation LP and a university team
-            project delivered to a real client.
-          </Body>
+          <EntryHeader title="Junior Developer Intern" dates="May – Aug 2024" />
+          <OrgLine>Solucore Inc.</OrgLine>
+          <OrgLine>Remote role at Solucore, an independent advisor for elevator and escalator systems.</OrgLine>
+          <BulletList
+            items={[
+              'Built an Elevator Safety UI for real-time monitoring of elevator systems, using ReactJS integrated with REST APIs for live data visualization and automated alerts.',
+              'Delivered features on a consistent sprint cadence within an Agile/Scrum team, contributing to on-time milestone releases.',
+            ]}
+          />
         </TimelineCard>
 
         <TimelineCard>
-          <EntryHeader title="Community Mentor" dates="Sept 2023 – Sept 2025" />
-          <OrgLine>Dalhousie University</OrgLine>
-          <Body>
-            {`I contribute to creating a welcoming and inclusive environment for students in residence, by serving as a bridge between newcomers and established members.\nMy responsibilities encompassed guiding students to campus resources, planning and running educational field trips, and providing 1on1 mentoring to those facing both personal and professional difficulties`}
-          </Body>
+          <EntryHeader title="Community Mentor" dates="Sept 2023 – Apr 2026" />
+          <OrgLine>Residence Life at Dal</OrgLine>
+          <BulletList
+            items={[
+              'Contributed to creating a welcoming and inclusive environment for students in residence, by serving as a bridge between newcomers and established members.',
+              'Guided students to campus resources, planning and running educational field trips, and providing 1 on 1 mentoring to those facing both personal and professional difficulties.',
+              'Promoted a positive and safe residence community. Performed rounds within residence buildings to support students during incidents ranging from mental health to first aid emergencies.',
+            ]}
+          />
         </TimelineCard>
 
         <TimelineCard>
-          <EntryHeader title="Guest Services Associate" dates="April – Sep 2024" />
-          <OrgLine>Dalhousie Event &amp; Conference Services</OrgLine>
+          <EntryHeader title="Guest Service Associate" dates="May 2024 – Aug 2024" />
+          <OrgLine>Event &amp; Conference Services</OrgLine>
           <BulletList
             items={[
               'Collaborated closely with supervisors and custodial staff to coordinate daily operations, resolve guest concerns efficiently, and ensure a seamless experience through effective teamwork and communication.',

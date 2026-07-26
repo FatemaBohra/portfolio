@@ -64,25 +64,25 @@ export default function About() {
 
         <RoleCard
           title="VP, Women in Tech Society"
-          dates="Sep 2023 – Apr 2026"
+          dates="Sep 2024 – Dec 2024"
           org="Dalhousie University"
           description="Led initiatives promoting diversity and inclusion for women in STEM."
         />
         <RoleCard
           title="Community Mentor"
-          dates="Sep 2023 – Dec 2025"
+          dates="Sept 2023 - Apr 2026"
           org="Dalhousie University"
           description="Guided first-year students through academic and personal transitions."
         />
         <RoleCard
           title="Community Safety Team Member"
-          dates="Aug 2024 – Sept 2025"
+          dates="Aug 2024 – Sept 2026"
           org="Dalhousie University"
           description="Supports campus safety through evening patrols and student check-ins."
         />
         <RoleCard
           title="Guest Services Associate"
-          dates="May – Sept 2024"
+          dates="May 2024 - Aug 2024"
           org="Dalhousie University"
           description="Front-line support for campus visitors, events, and daily operations."
         />
@@ -108,7 +108,7 @@ export default function About() {
         />
         <RoleCard
           title="Social Media Coordinator"
-          dates="June – Oct 2020"
+          dates="Jun 2020 – Oct 2020"
           org="SankalpTaru Foundation"
           description="Promoted tree-plantation initiatives to combat climate change through articles and videos."
         />

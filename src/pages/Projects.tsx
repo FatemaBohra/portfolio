@@ -173,14 +173,6 @@ export default function Projects() {
             description="Dynamic search interface built with React Hooks, Git/GitHub workflow."
             tags={['React + Vite', 'Hooks', 'Git']}
           />
-
-          <GridCard
-            links={[{ label: 'GitLab', href: 'https://git.cs.dal.ca/courses/csci-x691/hci4good-solucore' }]}
-            title="Elevator Safety UI"
-            note="Source code hosted on private GitLab repository. Available upon request."
-            description="Solucore Inc. collaboration. ReactJS + REST APIs for real-time elevator monitoring and alerts, built with Agile/Scrum methodology."
-            tags={['ReactJS + Vite', 'REST APIs', 'Agile / Scrum']}
-          />
         </div>
       </div>
     </div>
