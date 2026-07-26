@@ -114,9 +114,9 @@ export default function EducationExperience() {
         </TimelineCard>
 
         <TimelineCard>
-          <EntryHeader title="Junior Developer Intern" dates="May – Aug 2024" />
+          <EntryHeader title="Full-Stack Developer" dates="May – Aug 2024" />
           <OrgLine>Solucore Inc.</OrgLine>
-          <OrgLine>Remote role at Solucore, an independent advisor for elevator and escalator systems.</OrgLine>
+          <OrgLine>Dal collaboration with Solucore, an independent advisor for elevator and escalator systems.</OrgLine>
           <BulletList
             items={[
               'Built an Elevator Safety UI for real-time monitoring of elevator systems, using ReactJS integrated with REST APIs for live data visualization and automated alerts.',

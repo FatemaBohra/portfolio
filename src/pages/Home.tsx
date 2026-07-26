@@ -312,7 +312,7 @@ export default function Home() {
                 <div style={{ fontSize: 12, fontStyle: 'italic', color: 'rgba(255,255,255,0.6)' }}>Jazz Aviation LP</div>
               </div>
               <div>
-                <div style={{ fontSize: 14, fontWeight: 500 }}>Junior Developer Intern</div>
+                <div style={{ fontSize: 14, fontWeight: 500 }}>Full-Stack Developer</div>
                 <div style={{ fontSize: 12, fontStyle: 'italic', color: 'rgba(255,255,255,0.6)' }}>Solucore Inc.</div>
               </div>
               <div>
