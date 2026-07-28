@@ -63,7 +63,7 @@ export default function About() {
         </span>
 
         <RoleCard
-          title="VP, Women in Tech Society"
+          title="Vice President — Women in Tech Society"
           dates="Sep 2024 – Dec 2024"
           org="Dalhousie University"
           description="Led initiatives promoting diversity and inclusion for women in STEM."
@@ -76,15 +76,9 @@ export default function About() {
         />
         <RoleCard
           title="Community Safety Team Member"
-          dates="Aug 2024 – Sept 2026"
+          dates="Sept 2024 - Apr 2026"
           org="Dalhousie University"
           description="Supports campus safety through evening patrols and student check-ins."
-        />
-        <RoleCard
-          title="Guest Services Associate"
-          dates="May 2024 - Aug 2024"
-          org="Dalhousie University"
-          description="Front-line support for campus visitors, events, and daily operations."
         />
 
         <span

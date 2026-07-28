@@ -115,8 +115,8 @@ export default function EducationExperience() {
 
         <TimelineCard>
           <EntryHeader title="Full-Stack Developer" dates="May – Aug 2024" />
-          <OrgLine>Solucore Inc.</OrgLine>
-          <OrgLine>Dal collaboration with Solucore, an independent advisor for elevator and escalator systems.</OrgLine>
+          <OrgLine>Solucore Inc. (HCI4Good)</OrgLine>
+          <OrgLine>Dal (HCI4Good) collaboration with Solucore, an independent advisor for elevator and escalator systems.</OrgLine>
           <BulletList
             items={[
               'Built an Elevator Safety UI for real-time monitoring of elevator systems, using ReactJS integrated with REST APIs for live data visualization and automated alerts.',
